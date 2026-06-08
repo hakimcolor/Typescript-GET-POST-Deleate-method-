@@ -31,7 +31,7 @@ export const productcontroller = (
         data: products,
       })
     );
-  } else if (method === 'GE' && id !== undefined) {
+  } else if (method === 'GET' && id !== undefined) {
     const products = readproduct();
     const product = products.find((p: Iproduct) => p.id === id);
     console.log(product);
