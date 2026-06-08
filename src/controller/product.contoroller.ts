@@ -43,5 +43,15 @@ export const productcontroller = (
         data: product,
       })
     );
+  } else if (method === 'POST' && url === '/products') {
+    const body= ''
+    res.writeHead(200, { 'content-Type': 'application/json' });
+
+    res.end(
+      JSON.stringify({
+        message: 'This is the products page.',
+        // data: product,
+      })
+    );
   }
 };
