@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "description": "Frontend Developer with experience in React and TypeScript."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@gmail.com",
+    "description": "Backend Developer specializing in Node.js and Express."
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "email": "michael@gmail.com",
+    "description": "Full Stack Developer skilled in MERN stack development."
+  }
+]
