@@ -1,7 +1,8 @@
 import type { IncomingMessage, ServerResponse } from 'http';
-import { readproduct } from '../services/product.services';
+import { insertproduct, readproduct } from '../services/product.services';
 import type { Iproduct } from '../types/product.type';
 import { parseBody } from '../utility/parseBody';
+import { log } from 'console';
 
 export const productcontroller = async (
   req: IncomingMessage,
@@ -45,14 +46,22 @@ export const productcontroller = async (
       })
     );
   } else if (method === 'POST' && url === '/products') {
-    const body = await parseBody(req)
-    console.log('body is ',body)
+    const body = await parseBody(req);
+    const newProduct = {
+      id: Date.now(),
+      ...body,
+    };
+    // console.log(newProduct);
+    // console.log(' ', body);
+    const products = readproduct();
+    products.push(newProduct);
+    insertproduct(products)
     res.writeHead(200, { 'content-Type': 'application/json' });
 
     res.end(
       JSON.stringify({
         message: 'This is the products page.',
-        // data: product,
+        data: newProduct,
       })
     );
   }

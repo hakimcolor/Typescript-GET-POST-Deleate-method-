@@ -16,5 +16,18 @@
     "name": "Michael Brown",
     "email": "michael@gmail.com",
     "description": "Full Stack Developer skilled in MERN stack development."
+  },
+  {
+    "id": 1780965937896,
+    "name": " abce",
+    "description": "product description",
+    "price": 25000
+  },
+  {
+    "id": 1780967984724,
+    "name": " abce",
+    "description": "product description",
+    "price": 25000,
+    "hello": "hello man how r you ."
   }
 ]
