@@ -13,22 +13,10 @@
     "description": "Backend Developer specializing in Node.js and Express."
   },
   {
-    "id": 3,
-    "name": "Michael Brown",
-    "email": "michael@gmail.com",
-    "description": "Full Stack Developer skilled in MERN stack development."
-  },
-  {
-    "id": 1780965937896,
-    "name": " abce",
+    "id": 1781007153493,
+    "name": " phone",
     "description": "product description",
-    "price": 25000
-  },
-  {
-    "id": 1780967984724,
-    "name": " abce",
-    "description": "product description",
-    "price": 25000,
-    "hello": "hello man how r you ."
+    "price": 2500,
+    "hello": "very good and amazing phone you can buy no problem ok "
   }
 ]
